@@ -1,6 +1,16 @@
 (() => {
-    if (window.location.href === '/')
+    const location = window.location;
+    const body = document.body;
+
+    console.log(body);
+
+    if (location.pathname === '/') {
+        body.id = 'home';
         console.log('home');
-    else
-        console.log(window.location.href);
+    } else if (location.pathname === '/test123') {
+        document.querySelector('.test123').remove();
+    } else {
+        body.id = location.pathname.replace('/', '');
+        console.log(location.href);
+    }
 })();
