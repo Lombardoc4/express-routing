@@ -11,7 +11,7 @@
     "http-errors": "^1.8.0"
   },
   "scripts": {
-    "server": "nodemon router.js",
+    "server": "nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
