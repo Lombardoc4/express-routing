@@ -6,10 +6,6 @@ const e = require("express");
 
     console.log(body);
 
-    document.getElementById('test321').addEventListener('click', () => {
-        window.location.pushstate(null, null, '/something');
-        e.preventDefault();
-    });
 
     if (location.pathname === '/') {
         body.id = 'home';
